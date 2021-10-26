@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * Stores the values of all the marks and converts them into grades
  *
  * @Akes Ali
  * @version 19/10/2021

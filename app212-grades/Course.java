@@ -37,13 +37,18 @@ public class Course
     }
 
     /**
-     * Create four modules and add them to the
-     * modules list for testing purposes.  These
-     * must be your four modules.
+     * List of all created modules
      */
     public void createModules()
     {
-
+        Module co452 = new Module ("CO452", "Programming Concepts");
+        Module co450 = new Module ("CO450", "Computer Architecture");
+        Module co456 = new Module ("CO456", "Web Developement");
+        Module co454 = new Module ("CO454", "Digital Technology");
+        addModule(co452);
+        addModule(co450);
+        addModule(co456);
+        addModule(co454);
     }
     
     public void addModule(Module module)
@@ -55,7 +60,7 @@ public class Course
     }
     
     /**
-     * 
+     * Converts the grades to marks
      */
     public Grades convertToGrade(int mark)
     {
@@ -74,8 +79,8 @@ public class Course
     }
     
     /**
-     * Calculate the average mark from the four module marks
-     * and convert that into a final grade.
+     * Calculation the average mark from the four module marks
+     * and converts them into a final grade.
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {

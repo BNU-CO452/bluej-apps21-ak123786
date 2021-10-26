@@ -62,12 +62,19 @@ public class Student
     }
     
     /**
-     * Award a different pass mark for each of the
+     * Awards a mark for each of the
      * modules on the enrolled course
      */
     public void awardTestMarks()
     {
-        
+        int value = 70;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(70);
+            value = value - 10;
+            marks.add(mark);
+        }
     }
     
     /**
