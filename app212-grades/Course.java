@@ -9,8 +9,10 @@ import java.util.ArrayList;
 public class Course
 {
     public final static int MAXN_MODULES = 4;
+    public final static int MAXN_STUDENTS = 4;
     
     public ArrayList<Module> modules;
+    public ArrayList<Student>students;
     
     private String code;
     private String title;
@@ -32,6 +34,7 @@ public class Course
         this.title = title;
         
         modules  = new ArrayList<Module>();
+        students = new ArrayList<Student>();
         
         createModules();
     }
@@ -51,11 +54,34 @@ public class Course
         addModule(co454);
     }
     
+        /**
+     * List of all created students
+     */
+    public void createStudents()
+    {
+        Student akes = new Student ("Akes", 22012359);
+        Student arbaaz = new Student ("Arbaaz", 22222222);
+        Student mohammed = new Student ("Mohammed", 11111111);
+        Student stefen = new Student ("Stefen", 44444444);
+        addStudent(akes);
+        addStudent(arbaaz);
+        addStudent(mohammed);
+        addStudent(stefen);
+    }
+    
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
         {
             modules.add(module);
+        }
+    }
+    
+        public void addStudent(Student student)
+    {
+        if(students.size() < MAXN_MODULES)
+        {
+            students.add(student);
         }
     }
     
@@ -90,7 +116,7 @@ public class Course
         {
             total = total + mark.getValue();
         }
-        finalMark = total / 4;
+        finalMark = total / MAXN_MODULES;
         finalGrade = convertToGrade(finalMark);
         return finalGrade;
     }
@@ -113,6 +139,21 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+        for (Module module : modules)
+        {
+            module.print();
+            module.printCredit();
+        }
+    }
+    
+    /**
+     * Print the course's four students
+     */
+    public void printStudents()
+    {
+        for (Student student : students)
+        {
+            student.print();
+        }
     }
 }
