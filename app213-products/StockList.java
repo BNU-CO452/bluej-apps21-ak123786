@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Akes Ali 
+ * @version 02/11/2021
  */
 public class StockList
 {
@@ -46,6 +46,8 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        Product product = findProduct(productID);
+        product.increaseQuantity(amount);
     }
     
     /**
@@ -54,16 +56,27 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
+        for(Product product : stock)
+        {
+           if(product.getID() == productID)
+           {
+                return product;
+           }
+        }
         return null;
     }
     
+    public void sellProduct(int productID)
+    {
+        sellProduct(productID, 1);
+    }
     
     /**
-     * Sell one of the given product.
+     * Sell  many of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int productID)
+    public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
         
@@ -133,7 +146,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Peacock's Stock List");
+        System.out.println(" AK's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }
