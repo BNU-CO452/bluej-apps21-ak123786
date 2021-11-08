@@ -47,7 +47,26 @@ public class StockList
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        product.increaseQuantity(amount);
+        if(product != null)
+        {
+            if(product.getQuantity() < 10)
+            {
+                product.increaseQuantity(amount);
+                System.out.println("Bought " + amount + " of " + product.getName());
+                // printout message
+            }
+            else if(product.getQuantity() == 0)
+            {
+                System.out.println("Not enough space for " + product.getName()
+                                    + ". Please sell the existing stock");
+                // printout message
+            }
+        }
+        else
+        {
+            System.out.println("Couldn't find product");
+            //printout message
+        }
     }
     
     /**
@@ -62,6 +81,18 @@ public class StockList
            {
                 return product;
            }
+        }
+        return null;
+    }
+    
+        public Product findProductName(String productName)
+    {
+        for(Product product : stock)
+        {
+           if(product.getName() == productName)
+
+                return product;
+           System.out.print(product);
         }
         return null;
     }
@@ -84,18 +115,19 @@ public class StockList
         {
             if(product.getQuantity() > 0)
             {
-                product.decreaseQuantity(1);
-                
-                // printout message
+                product.decreaseQuantity(amount);
+                System.out.println(" Sold " + amount + " of "
+                + product.getName());
             }
             else
             {
-                // printout message
+                System.out.println(" The product " + product.getName()
+                + " is out of stock ");
             }
         }
         else
         {
-            // printout message
+            System.out.println("Couldn't find product");
         }
     }    
 

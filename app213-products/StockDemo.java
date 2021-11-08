@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -12,14 +12,19 @@ public class StockDemo
     // The stock manager.
     private StockList stock;
     private int amount;
+    private int id;
+    
+    private String title;
+    
+    public ArrayList<Product> products;
 
     /**
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo(StockList stock)
+    public StockDemo()
     {
-        this.stock = stock;
+        this.stock = new StockList();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
