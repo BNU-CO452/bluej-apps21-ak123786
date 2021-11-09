@@ -1,8 +1,6 @@
-StockDemo CarDemo = new StockDemo();
-StockList CarList = new StockList();
 StockList CarList = new StockList();
 StockDemo CarDemo = new StockDemo(CarList);
-CarDemo.runDemo();
+CarList.print();
 
  AK's Stock List
  ====================
@@ -18,69 +16,37 @@ CarDemo.runDemo();
  ID 109: Lamborghini Urus stock level: 0
  ID 110: Range Rover SVR stock level: 0
 
-Bought 4 of Mercedes AMG GT
-Bought 6 of BMW M8
-Bought 8 of Audi RS3
-Bought 10 of Rolls Royce Wraith
-Bought 12 of Lamborghini Huracan
-Bought 14 of Mercedes C63s
-Bought 16 of Porsche Turbo S
-Bought 18 of BMW M3
-Bought 20 of Lamborghini Urus
-Bought 20 of Range Rover SVR
-
- AK's Stock List
- ====================
-
- ID 101: Mercedes AMG GT stock level: 4
- ID 102: BMW M8 stock level: 6
- ID 103: Audi RS3 stock level: 8
- ID 104: Rolls Royce Wraith stock level: 10
- ID 105: Lamborghini Huracan stock level: 12
- ID 106: Mercedes C63s stock level: 14
- ID 107: Porsche Turbo S stock level: 16
- ID 108: BMW M3 stock level: 18
- ID 109: Lamborghini Urus stock level: 20
- ID 110: Range Rover SVR stock level: 20
-
- Sold 2 of Mercedes AMG GT
- Sold 4 of BMW M8
- Sold 6 of Audi RS3
- Sold 8 of Rolls Royce Wraith
- Sold 10 of Lamborghini Huracan
- Sold 12 of Mercedes C63s
- Sold 14 of Porsche Turbo S
- Sold 16 of BMW M3
- Sold 18 of Lamborghini Urus
- Sold 19 of Range Rover SVR
-
- AK's Stock List
- ====================
-
- ID 101: Mercedes AMG GT stock level: 2
- ID 102: BMW M8 stock level: 2
- ID 103: Audi RS3 stock level: 2
- ID 104: Rolls Royce Wraith stock level: 2
- ID 105: Lamborghini Huracan stock level: 2
- ID 106: Mercedes C63s stock level: 2
- ID 107: Porsche Turbo S stock level: 2
- ID 108: BMW M3 stock level: 2
- ID 109: Lamborghini Urus stock level: 2
- ID 110: Range Rover SVR stock level: 1
-
-CarList.removeProductViaID(110);
+CarList.removeProductViaID(101);
+Product Removed Mercedes AMG GT
 CarList.print();
 
  AK's Stock List
  ====================
 
- ID 101: Mercedes AMG GT stock level: 2
- ID 102: BMW M8 stock level: 2
- ID 103: Audi RS3 stock level: 2
- ID 104: Rolls Royce Wraith stock level: 2
- ID 105: Lamborghini Huracan stock level: 2
- ID 106: Mercedes C63s stock level: 2
- ID 107: Porsche Turbo S stock level: 2
- ID 108: BMW M3 stock level: 2
- ID 109: Lamborghini Urus stock level: 2
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+CarList.removeProductViaID(111);
+ID doesn't exist 
+CarList.print();
+
+ AK's Stock List
+ ====================
+
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
 

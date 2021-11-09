@@ -31,7 +31,15 @@ public class StockList
     public void removeProductViaID(int productID)
     {
         Product product = findProduct(productID);
-        stock.remove(product);
+        if(product != null)
+        {
+            stock.remove(product);
+            System.out.println("Product Removed " + product.getName());
+        }
+        else
+        {
+            System.out.println("ID doesn't exist ");
+        }
     }
     
     /**
