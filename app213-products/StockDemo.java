@@ -19,12 +19,12 @@ public class StockDemo
     public ArrayList<Product> products;
 
     /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
+     * A list of 10 products
+     * 
      */
-    public StockDemo()
+    public StockDemo(StockList stock)
     {
-        this.stock = new StockList();
+        this.stock = stock;
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
@@ -42,11 +42,10 @@ public class StockDemo
     }
     
     /**
-     * Provide a demonstration of how the ProductList meets all
+     * A demonstration of how the ProductList meets all
      * the user requirements by making a delivery of each product 
      * buying it in various amounts and then selling each
-     * product by various amounts. Make sure all the requirements
-     * have been demonstrated.
+     * product by various amounts.
      */
     public void runDemo()
     {
@@ -60,6 +59,10 @@ public class StockDemo
         sellProducts();
         stock.print();        
     }
+    
+    /**
+     * A list of stock thats been bought
+     */
     
     private void buyProducts()
     {
@@ -75,6 +78,9 @@ public class StockDemo
         stock.buyProduct(110, 20);
     }
 
+    /**
+     * A list of stock being sold
+     */
     private void sellProducts()
     {
         stock.sellProduct(101, 2);

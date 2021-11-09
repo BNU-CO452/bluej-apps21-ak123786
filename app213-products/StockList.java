@@ -21,12 +21,17 @@ public class StockList
     }
 
     /**
-     * Add a product to the list.
-     * @param item The product item to be added.
+     * Add a method to add a product to the list.
      */
     public void add(Product item)
     {
         stock.add(item);
+    }
+    
+    public void removeProductViaID(int productID)
+    {
+        Product product = findProduct(productID);
+        stock.remove(product);
     }
     
     /**
@@ -37,12 +42,9 @@ public class StockList
         buyProduct(productID, 1);
     }
     
-    
     /**
-     * Buy a quantity of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
+     * Buy a quantity of a particular product 
+     * which increases the quantity of the product by the given amount.
      */
     public void buyProduct(int productID, int amount)
     {
@@ -85,7 +87,11 @@ public class StockList
         return null;
     }
     
-        public Product findProductName(String productName)
+    /**
+     * Find a product to match the product name
+     * if not found return null
+     */
+    public Product findProductName(String productName)
     {
         for(Product product : stock)
         {
@@ -97,15 +103,17 @@ public class StockList
         return null;
     }
     
+    /**
+     * A method to sell a single quantity of a product
+     */
     public void sellProduct(int productID)
     {
         sellProduct(productID, 1);
     }
     
     /**
-     * Sell  many of the given product.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
+     * Sell  many of a given product.
+     * This shows the before and after status of the product.
      */
     public void sellProduct(int productID, int amount)
     {
@@ -130,14 +138,11 @@ public class StockList
             System.out.println("Couldn't find product");
         }
     }    
-
-    
+ 
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
      * match any product, return zero.
-     * @param id The ID of the product.
-     * @return The quantity of the given product in stock.
      */
     public int numberInStock(int productID)
     {
@@ -147,7 +152,6 @@ public class StockList
     /**
      * Print details of the given product. If found,
      * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
      */
     public void printProduct(int productID)
     {
@@ -175,6 +179,9 @@ public class StockList
         System.out.println();
     }
     
+    /**
+     * print out all stock available
+     */
     public void printHeading()
     {
         System.out.println();

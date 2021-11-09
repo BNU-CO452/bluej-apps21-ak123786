@@ -16,8 +16,6 @@ public class Product
     /**
      * Constructor for objects of class Product.
      * The initial stock quantity is zero.
-     * @param id The product's identifying number.
-     * @param name The product's name.
      */
     public Product(int id, String name)
     {
@@ -28,7 +26,7 @@ public class Product
     }
 
     /**
-     * @return The product's id.
+     * return The product's id.
      */
     public int getID()
     {
@@ -36,7 +34,7 @@ public class Product
     }
 
     /**
-     * @return The product's name.
+     * return The product's name.
      */
     public String getName()
     {
@@ -44,23 +42,32 @@ public class Product
     }
 
     /**
-     * @return The quantity in stock.
+     * return The quantity in stock.
      */
     public int getQuantity()
     {
         return quantity;
     }
 
+    /**
+     * Set the quantity of the products
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Increase the quantity if the products
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Decrease the quantity of the products
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -68,14 +75,16 @@ public class Product
     }
     
     /**
-     * @return The id, name and quantity in stock.
+     * return The id, name and quantity in stock.
      */
     public String toString()
     {
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
+    /**
+     * Print the id, name and quantity
+     */
     public void print()
     {
         System.out.println(toString());
