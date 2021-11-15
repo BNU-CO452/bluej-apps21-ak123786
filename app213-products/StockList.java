@@ -12,6 +12,8 @@ public class StockList
     // A list of the products.
     private ArrayList<Product> stock;
 
+    public int quantity;
+    
     /**
      * Initialise the stock manager.
      */
@@ -164,7 +166,19 @@ public class StockList
             System.out.println("Couldn't find product");
         }
     }    
- 
+    
+    
+    public void printLowStock()
+    {
+        for(Product product: stock)
+        {
+            if(product.quantity <= 5)
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
