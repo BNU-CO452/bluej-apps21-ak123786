@@ -13,6 +13,7 @@ public class StockApp
     
     private StockList stock;
     
+    public Product product;
     /**
      * Constructor for objects of class StockApp
      */
@@ -129,10 +130,15 @@ public class StockApp
     
     public void searchProduct()
     {
-        int id = reader.getInt("Please enter the ID: ");
-        Product product = stock.findProduct(id);
-        product.getName();
-        System.out.println("Found " + product.getName());
+        String name = reader.getString("Please enter the name: ");
+        if (product.getName() == name)
+        {
+            System.out.println(product);
+        }
+        else
+        {
+            System.out.println("Couldn't find product");
+        }
     }
     
     /**
