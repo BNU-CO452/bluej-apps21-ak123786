@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Program here.
+ * Method loads the stock app as a program
  *
  * @author (Akes Ali)
  * @version (23/11/2021)

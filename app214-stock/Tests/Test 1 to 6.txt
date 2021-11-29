@@ -1,0 +1,128 @@
+ ********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > print
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > quit
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > add
+Please enter the ID: 
+111
+Please enter the name of the product: BMW M5
+Product 111, BMW M5 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > remove
+Please enter the ID: 
+101
+Product Removed Mercedes AMG GT
+Product has been removed
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > print
+
+ AK's Stock List
+ ====================
+
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+ ID 111: BMW M5 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > 

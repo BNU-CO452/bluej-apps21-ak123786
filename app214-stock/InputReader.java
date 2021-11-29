@@ -25,7 +25,6 @@ public class InputReader
      * Read a line of text from standard input (the text terminal),
      * and return it as a String.
      *
-     * @return  A String typed by the user.
      */
     public String getString(String prompt)
     {
@@ -52,7 +51,6 @@ public class InputReader
      * Read a the next int from standard imput (the text terminal),
      * and return it as an interger.
      * 
-     * @return Integer typed by user.
      */
     public int getInt(String prompt)
     {

@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.lang.Iterable;
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -14,6 +15,7 @@ public class StockApp
     private StockList stock;
     
     public Product product;
+    
     /**
      * Constructor for objects of class StockApp
      */
@@ -44,6 +46,9 @@ public class StockApp
         }
     }
     
+    /**
+     * List of all operations
+     */
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -86,16 +91,22 @@ public class StockApp
         return false;
     }
     
+    /**
+     * Method to add product
+     */
     public void addProduct()
     {
         int id = reader.getInt("Please enter the ID: ");
-        String name = reader.getString("Please enter the name of the product: ");
-        Product product = new Product(id, name);
-        stock.add(product);
-        System.out.println("Product " + product.getID() 
-        + ", " + product.getName() + " has been ADDED");
-    }    
+            String name = reader.getString("Please enter the name of the product: ");
+            Product product = new Product(id, name);
+            stock.add(product);
+            System.out.println("Product " + product.getID() 
+            + ", " + product.getName() + " has been ADDED");  
+    }
     
+    /**
+     * Method to remove product 
+     */
     public void removeProduct()
     {
         int id = reader.getInt("Please enter the ID: ");
@@ -103,18 +114,24 @@ public class StockApp
         System.out.println("Product has been removed");
     }
     
+    /**
+     * Method to buy product 
+     */
     public void buyProduct()
     {
         int id = reader.getInt("Please enter the ID: ");
-        int amount = reader.getInt("Please enter sell amount >");  
+        int amount = reader.getInt("Please enter buy amount >");  
   
         Product product = stock.findProduct(id);
-        stock.sellProduct(id, amount);
+        stock.buyProduct(id, amount);
         stock.print();    
-        System.out.println("Sold " + amount + " of " 
+        System.out.println("Bought " + amount + " of " 
         + product.getName());
     }
     
+    /**
+     * Method to sell product 
+     */
     public void sellProduct()
     {
         int id = reader.getInt("Please enter the ID: ");
@@ -128,17 +145,17 @@ public class StockApp
         + product.getName());
     } 
     
+    /**
+     * Method to search product 
+     */
     public void searchProduct()
     {
-        String name = reader.getString("Please enter the name: ");
-        if (product.getName() == name)
-        {
-            System.out.println(product);
-        }
-        else
-        {
-            System.out.println("Couldn't find product");
-        }
+        int id = reader.getInt("Please enter ID: ");
+        String name = reader.getString("Please enter product name: ");
+        Product product = new Product(id, name);
+        stock.print();
+        System.out.println("Product " + product.getID()
+            + "," + " " + product.getName() + " Has been found");
     }
     
     /**
