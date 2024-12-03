@@ -1,0 +1,24 @@
+Product Mercedes = new Product(101, "Mercedes AMG GT");
+Mercedes.print();
+ ID 101: Mercedes AMG GT stock level: 0
+Mercedes.decreaseQuantity(1);
+Mercedes.print();
+ ID 101: Mercedes AMG GT stock level: 0
+Mercedes.increaseQuantity(4);
+Mercedes.print();
+ ID 101: Mercedes AMG GT stock level: 4
+Mercedes.decreaseQuantity(2);
+Mercedes.print();
+ ID 101: Mercedes AMG GT stock level: 2
+Product BMW = new Product(102, "BMW M8");
+StockList dealership = new StockList();
+dealership.add(Mercedes);
+dealership.add(BMW);
+dealership.print();
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 2
+ ID 102: BMW M8 stock level: 0
+

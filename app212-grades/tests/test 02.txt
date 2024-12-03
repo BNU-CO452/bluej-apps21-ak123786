@@ -1,0 +1,47 @@
+Course software = new Course("BT1SFT1", "Software Engineering");
+Module co452 = new Module("CO452", "Programming Concepts");
+akes.enrol(software);
+software.addModule(co452);
+ModuleMark akco452 = new ModuleMark(co452);
+akco452.setMark(69);
+akes.addMark(akco452);
+Module co450 = new Module("CO450", "Computer Architecture");
+ModuleMark akco450 = new ModuleMark(co450);
+akco450.setMark(80);
+akes.addMark(akco450);
+software.addModule(co450);
+Module co456 = new Module("CO456", "Web Developement");
+software.addModule(co456);
+ModuleMark akco456 = new ModuleMark(co456);
+akco456.setMark(99);
+akes.addMark(akco456);
+Module co454 = new Module("CO454", "Digital Technology");
+software.addModule(co454);
+ModuleMark akco454 = new ModuleMark(co454);
+akco454.setMark(70);
+akes.addMark(akco454);
+akes.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22012359, Akes
+
+ Course BT1SFT1: Software Engineering
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452:  Programming Concepts	  15	69	B
+
+ CO450:  Computer Architecture	  15	80	A
+
+ CO456:  Web Developement	  15	99	A
+
+ CO454:  Digital Technology	  15	70	A
+
+
+ Final Course Grade = A

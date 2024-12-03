@@ -23,13 +23,17 @@ public class StockList
     }
 
     /**
-     * Add a method to add a product to the list.
+     * A method to add a product to the list.
      */
     public void add(Product item)
     {
         stock.add(item);
     }
     
+    
+    /**
+     * A method to remove a product from the list using the ID
+     */
     public void removeProductViaID(int productID)
     {
         Product product = findProduct(productID);
@@ -168,6 +172,9 @@ public class StockList
     }    
     
     
+    /**
+     * Print out all stock that is low
+     */
     public void printLowStock()
     {
         for(Product product: stock)

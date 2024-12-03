@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Program here.
+ * Method loads the stock app as a program
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Akes Ali)
+ * @version (23/11/2021)
  */
 public class Program
 {

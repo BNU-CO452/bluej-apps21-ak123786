@@ -1,0 +1,175 @@
+ ********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > buy
+Please enter the ID: 
+105
+Please enter buy amount >
+10
+Bought 10 of Lamborghini Huracan
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 10
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+Bought 10 of Lamborghini Huracan
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > sell
+Please enter the ID: 
+105
+Please enter sell amount >
+2
+ Sold 2 of Lamborghini Huracan
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 8
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+Sold 2 of Lamborghini Huracan
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > search
+Please enter ID: 
+102
+Please enter product name: BMW M8
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 8
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+Product 102, BMW M8 Has been found
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > low stock
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > restock
+
+ AK's Stock List
+ ====================
+
+
+ ID 101: Mercedes AMG GT stock level: 10
+ ID 102: BMW M8 stock level: 10
+ ID 103: Audi RS3 stock level: 10
+ ID 104: Rolls Royce Wraith stock level: 10
+ ID 105: Lamborghini Huracan stock level: 8
+ ID 106: Mercedes C63s stock level: 10
+ ID 107: Porsche Turbo S stock level: 10
+ ID 108: BMW M3 stock level: 10
+ ID 109: Lamborghini Urus stock level: 10
+ ID 110: Range Rover SVR stock level: 10
+********************************
+  App21-04: Stock Application 
+      by AK
+********************************
+
+    Print:      Print all product
+    Quit:       Quit the program
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for a product
+    Low Stock:  List of low stock
+    Restock:    Restock all low stock
+Please enter your choice > 

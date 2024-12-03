@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * Stores the values of all the marks and converts them into grades
  *
- * @author Derek Peacock and Nicholas Day
- * @version 2021-08-18
+ * @Akes Ali
+ * @version 19/10/2021
  */
 public class ModuleMark
 {

@@ -1,0 +1,52 @@
+StockList CarList = new StockList();
+StockDemo CarDemo = new StockDemo(CarList);
+CarList.print();
+
+ AK's Stock List
+ ====================
+
+ ID 101: Mercedes AMG GT stock level: 0
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+CarList.removeProductViaID(101);
+Product Removed Mercedes AMG GT
+CarList.print();
+
+ AK's Stock List
+ ====================
+
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
+CarList.removeProductViaID(111);
+ID doesn't exist 
+CarList.print();
+
+ AK's Stock List
+ ====================
+
+ ID 102: BMW M8 stock level: 0
+ ID 103: Audi RS3 stock level: 0
+ ID 104: Rolls Royce Wraith stock level: 0
+ ID 105: Lamborghini Huracan stock level: 0
+ ID 106: Mercedes C63s stock level: 0
+ ID 107: Porsche Turbo S stock level: 0
+ ID 108: BMW M3 stock level: 0
+ ID 109: Lamborghini Urus stock level: 0
+ ID 110: Range Rover SVR stock level: 0
+
